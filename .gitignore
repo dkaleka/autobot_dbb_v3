@@ -1,0 +1,15 @@
+﻿# Node / logs / secrets
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# snapshots (se você quiser versionar, remova esta linha)
+# snapshots/
