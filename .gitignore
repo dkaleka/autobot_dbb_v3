@@ -1,15 +1,44 @@
-﻿# Node / logs / secrets
+﻿# Node
 node_modules/
-*.log
-.env
-.env.*
-!.env.example
 
 # OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+*.lnk
+$RECYCLE.BIN/
+System Volume Information/
 
-# snapshots (se você quiser versionar, remova esta linha)
-# snapshots/
+# Secrets / tokens
+**/.env
+**/.env.*
+!.env.example
+**/*.key
+**/*.pem
+**/*.p12
+**/*token*
+**/*secret*
+**/secrets/
+**/credentials/
+
+# Logs / dumps
+**/logs/
+**/*.log
+**/*.jsonl
+
+# Attachments / big files
+**/attachments/
+**/*.zip
+**/*.7z
+**/*.rar
+**/*.mp4
+
+# Images (ignore by default, allow docs)
+**/*.png
+**/*.jpg
+!docs/img/**/*.png
+!docs/img/**/*.jpg
+
+# Safety (if someone creates a vault inside repo)
+**/*VAULT*/
